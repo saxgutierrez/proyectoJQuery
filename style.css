@@ -1,3 +1,9 @@
 body{background-color:#ded7ca47 ;}
-input{width: 100%;padding: 6px;}
+input{width: 100%;text-align: center; font-size: 34px;}
 p{font-size: 18px;}
+.diferent {color:red;} /*número menor a 4 dígitos o números repetidos*/
+.diferent1 {color:red;}
+#ganar{font-size: 100px;color: white; margin-top: 198px;}
+#divrefresh{text-align: center;}
+#botonrefresh{background-color: #f06100;color: white;}
+.modal-content{background-color: #7b7a7800;border:none;}
