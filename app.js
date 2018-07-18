@@ -22,6 +22,7 @@ $(document).ready(function(){
 			//En JavaScript “Math.random” elige el número al azar y “Math.floor” hace que ese número sea un entero.
 			var z=y.length;
 			var w = Math.floor(Math.random()*z);
+			//escoge un elemento del arreglo al azar
 			var randownumber=y[w];
 			console.log(randownumber); // muestra en consola el número en la página
 
@@ -59,8 +60,27 @@ $(document).ready(function(){
 
 					// VALIDACIONES DE PICAS Y FIJAS
 
-					var picas="";
-					var fijas="";
+					//parte el número y guarda cada dígito como un elemento en un  arreglo
+					randownumber1 = ("" + randownumber).split(""); //consideración especial porque viene de un elemento de un arreglo
+					value1 = value.split("");
+
+					//cada ves que se le dá enter resetea los valores
+					var fijas=0;
+					var picas =0;
+					
+					//comparación picas y fijas donde x es la posición del arreglo value1
+					for( var x in value1){
+					// al iterar se pasa a comparar cada valor de value1 y con el método indexOF con los valores de randownumber 
+					// devuelve la posición donde encuentre el mismo valor, entre [0 a 3]
+					// si no encuenta nada devuelve -1
+				    var posicion = randownumber1.indexOf(value1[x]);
+
+				       if( posicion >= 0) // si entra aquí es porque hay una coincidencia en las posiciones de [0 a 3]
+				       { 
+				           if( posicion == x){fijas++;} // compara las posiciones si son la misma es una fija
+				           else{picas++;} // como encontró algo y no tiene la misma posición es una pica
+				       }
+				    }
 
 					//variables de los Handlebars
 					var game = {
