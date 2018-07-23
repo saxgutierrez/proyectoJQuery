@@ -24,8 +24,7 @@
 	</div>
 	</div>
 	</div>
-	
-
+	<!--modal de ganador:end-->
 	<div class="container">
 	<div class="row">
 	<div class="col-md-6 offset-md-3 text-center">
@@ -36,9 +35,9 @@
 	<input class="mb-3 mt-3" id="entrada"  type="text"  maxlength="4" max="9999" min="1000" required>
 	<table class="table table-bordered mt-3">
 	<tr>
-		<th class="text-center">Número</th>
-		<th class="text-center">Picas</th>
-		<th class="text-center">Fijas</th>
+	<th class="text-center">Número</th>
+	<th class="text-center">Picas</th>
+	<th class="text-center">Fijas</th>
 	</tr>
 	<tbody id="tbody" >
 	</tbody>
@@ -46,7 +45,6 @@
 	</div>
 	</div>
 	</div>
-
 	<!-- bootstrap 4 -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -54,14 +52,12 @@
 	<!-- jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="app.js"></script>
-	
-
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
 	<script id="tablehandle" type="text/x-handlebars-template">
          <tr>
-         	<td class="text-center"><b>{{numeros}}</b></td>
-         	<td class="text-center"><b>{{picas}}</b></td>
-         	<td class="text-center"><b>{{fijas}}</b></td>
+	<td class="text-center"><b>{{numeros}}</b></td>
+	<td class="text-center"><b>{{picas}}</b></td>
+	<td class="text-center"><b>{{fijas}}</b></td>
          </tr>
 	</script>
 </body>
