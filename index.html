@@ -11,39 +11,39 @@
 
 	<!-- modal de ganador -->
 	<div class="modal fade" id="myModal" role="dialog" data-backdrop="static" data-keyboard="false" tabindex="-1">
-	<div class="modal-dialog modal-lg">
-	<div class="modal-content">
-	<div class=""> 
-	</div>
-	<div class="text-center">
-	<h1 id="ganar">¡Ganaste!</h1>
-	</div>
-	<div id="divrefresh" class="mt-3">
-	<a id="botonrefresh" class="btn" href="index.html" >Jugar Nuevamente</a>
-	</div>
-	</div>
-	</div>
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class=""> 
+				</div>
+				<div class="text-center">
+					<h1 id="ganar">¡Ganaste!</h1>
+				</div>
+				<div id="divrefresh" class="mt-3">
+					<a id="botonrefresh" class="btn" href="index.html" >Jugar Nuevamente</a>
+				</div>
+			</div>
+		</div>
 	</div>
 	<!--modal de ganador:end-->
 	<div class="container">
-	<div class="row">
-	<div class="col-md-6 offset-md-3 text-center">
-	<h1>Picas y Fijas</h1>
-	<p class="mb-3"><b>Ingresa <span class="">cuatro dígitos diferentes</span> y oprime Enter:</b></p>
-	</div>
-	<div class="col-md-4 offset-md-4 text-center">
-	<input class="mb-3 mt-3" id="entrada"  type="text"  min="1000" required>
-	<table class="table table-bordered mt-3">
-	<tr>
-	<th class="text-center">Número</th>
-	<th class="text-center">Picas</th>
-	<th class="text-center">Fijas</th>
-	</tr>
-	<tbody id="tbody" >
-	</tbody>
-	</table>
-	</div>
-	</div>
+		<div class="row">
+			<div class="col-md-6 offset-md-3 text-center">
+				<h1>Picas y Fijas</h1>
+				<p class="mb-3"><b>Ingresa <span class="">cuatro dígitos diferentes</span> y oprime Enter:</b></p>
+			</div>
+			<div class="col-md-4 offset-md-4 text-center">
+				<input class="mb-3 mt-3" id="entrada"  type="text"  min="1000" required>
+				<table class="table table-bordered mt-3">
+					<tr>
+						<th class="text-center">Número</th>
+						<th class="text-center">Picas</th>
+						<th class="text-center">Fijas</th>
+					</tr>
+					<tbody id="tbody" >
+					</tbody>
+				</table>
+			</div>
+		</div>
 	</div>
 	<!-- bootstrap 4 -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -54,11 +54,11 @@
 	<script src="app.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
 	<script id="tablehandle" type="text/x-handlebars-template">
-         <tr>
-	<td class="text-center"><b>{{numeros}}</b></td>
-	<td class="text-center"><b>{{picas}}</b></td>
-	<td class="text-center"><b>{{fijas}}</b></td>
-         </tr>
+    <tr>
+		<td class="text-center"><b>{{numeros}}</b></td>
+		<td class="text-center"><b>{{picas}}</b></td>
+		<td class="text-center"><b>{{fijas}}</b></td>
+    </tr>
 	</script>
 </body>
 </html>
